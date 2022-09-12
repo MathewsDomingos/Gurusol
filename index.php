@@ -1,69 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="author" content="Mateus Domingos Felipe" />
-  <meta name="description" content="Gurusol - Energia Solar" />
-  <title>Gurusol Energia Solar</title>
-  <link href="assets/images/favicon/favicon.png" rel="icon" />
-
-  <!--  Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
-    rel="stylesheet" />
-
-  <!--  Stylesheets-->
-  <link href="assets/css/vendor.min.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-
-  <!-- biblioteca de icones -->
-  <script src="https://kit.fontawesome.com/5a85d5d3cc.js" crossorigin="anonymous"></script>
-
-  <!-- Acessibilidade -->
-  <script src="assets/js/vendor/libras.js"></script>
-  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-
-  <!-- Politica de privacidade (COOKIES)-->
-  <script type="text/javascript" id="cookieinfo" src="assets/js/cookies.js"></script>
-</head>
+ <!-- Head -->
+<?php include("./sections/head.php");?>
 
 <body>
   <!-- preloader -->
-  <div class="preloader">
-    <div class="dual-ring"></div>
-  </div>
+  <?php include("./sections/preloader.php");?>
 
   <!-- WhatsApp Flutuante -->
-  <div class="container-whatsapp-btn" id="whatsapp-btn"><a class="floatBtn-icon-wpp-storage" target="_blank"
-      href="http://web.whatsapp.com/send?phone=+5563999460589"><img class="icon-wpp-storage"
-        src="assets/imagens/whatsapp-icone.svg"></a></div>
+  <?php include("./sections/wpp_flutuante.php");?>
 
   <!-- Acessibilidade -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
+  <?php include("./sections/acessibilidade.php");?>
 
   <!-- Document Wrapper-->
   <div class="wrapper clearfix" id="wrapperParallax">
-    <!-- 
-      ============================
-      Header
-      ============================
-      -->
+    <!-- Header -->
       <?php include("./sections/header.php");?>
     <!-- End .header-->
 
-    <!-- 
-      ============================
-      Slider #1 Section
-      ============================
-      -->
+    <!-- Slider #1 Section -->
     <section class="slider slider-1" id="slider-1">
       <div class="container-fluid pe-0 ps-0">
         <div class="slider-carousel owl-carousel carousel-navs carousel-dots" data-slide="1" data-slide-rs="1"
